@@ -1,12 +1,14 @@
 OUTPUT="$(adb devices)"
 
 amountLine="$(adb devices | wc -l | xargs)"
-echo $amountLine
+
 ((amountLine = amountLine - 2))
 if [ "$amountLine" -eq "0" ]; then
    echo "No devices found";
    exit;
 fi
+
+if  [ "$amountLine" -gt "1" ]; then
 echo "${OUTPUT}"
 echo "Select device at: "
 read deviceIndex
@@ -17,6 +19,10 @@ fi
 if [ "$deviceIndex" -gt "$amountLine" ]; then
    echo "No devices found at $deviceIndex";
    exit;
+fi
+else
+deviceIndex="1"
+
 fi
 
 ((deviceIndex = deviceIndex +1))
