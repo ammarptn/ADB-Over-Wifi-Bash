@@ -29,25 +29,25 @@ Now you are ready to use this Bash script
 ![alt text](https://raw.githubusercontent.com/ammarptn/ADB-Over-Wifi-Bash/master/src3.png)
 
 ## Remark
-- if you change wifi network, you need to connect and run command again.
-- if you kill ADB, you need to connect and run command again.
+- If you change wifi network, you need to connect and run command again.
+- If you kill ADB, you need to connect your devices to your PC vie USB and run command again.
 
 ## Bonus
 - You can add the bash script as external tool in Android studio
  - Go to Preference > tools > external tools
 ![alt text](https://raw.githubusercontent.com/ammarptn/ADB-Over-Wifi-Bash/master/src4.png)
 
- - click plus sign at the bottom to add.
+ - Click plus sign at the bottom to add.
  - Enter name, Description and browse for the "set_adb_over_wifi" bash script
 ![alt text](https://raw.githubusercontent.com/ammarptn/ADB-Over-Wifi-Bash/master/src5.png)
 
  - Now it ready to use. You can access from Tools > External tools
 ![alt text](https://raw.githubusercontent.com/ammarptn/ADB-Over-Wifi-Bash/master/src6_6.png)
 ## More Bonus
-- you also can make it super convininet to use by assign keymap to it.
+- You also can make it super convininet to use by assign keymap to it.
 - Go to Preference > keymap > Search for "ADB over wifi"
 - Set your prefered key to it.
 - Now, Connect your devices and press your key combo
-- unplug
-- back to work
+- Unplug
+- Back to work
 
