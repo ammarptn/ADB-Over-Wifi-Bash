@@ -24,8 +24,8 @@ Now you are ready to use this Bash script
 - Terminal will show list of your devices
 ![alt text](https://raw.githubusercontent.com/ammarptn/ADB-Over-Wifi-Bash/master/src1.png)
 - Select devices that you wish to setup ADB over Wifi by Enter number (If you have only one devices connected, it will skip this step)
-![alt text](https://raw.githubusercontent.com/ammarptn/ADB-Over-Wifi-Bash/master/src2.png)
-- Wait for a sec , unplug connection and your devices will ready to access over wifi.
+![alt text](https://raw.githubusercontent.com/ammarptn/ADB-Over-Wifi-Bash/master/src2_2.png)
+- Run it and Wait for a sec , unplug USB connection and your devices will ready to access over wifi.
 ![alt text](https://raw.githubusercontent.com/ammarptn/ADB-Over-Wifi-Bash/master/src3.png)
 
 ## Remark
@@ -42,7 +42,7 @@ Now you are ready to use this Bash script
 ![alt text](https://raw.githubusercontent.com/ammarptn/ADB-Over-Wifi-Bash/master/src5.png)
 
  - Now it ready to use. You can access from Tools > External tools
-![alt text](https://raw.githubusercontent.com/ammarptn/ADB-Over-Wifi-Bash/master/src6.png)
+![alt text](https://raw.githubusercontent.com/ammarptn/ADB-Over-Wifi-Bash/master/src6_6.png)
 ## More Bonus
 - you also can make it super convininet to use by assign keymap to it.
 - Go to Preference > keymap > Search for "ADB over wifi"
