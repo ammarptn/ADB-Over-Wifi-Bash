@@ -1,0 +1,34 @@
+OUTPUT="$(adb devices)"
+
+amountLine="$(adb devices | wc -l | xargs)"
+echo $amountLine
+((amountLine = amountLine - 2))
+if [ "$amountLine" -eq "0" ]; then
+   echo "No devices found";
+   exit;
+fi
+echo "${OUTPUT}"
+echo "Select device at: "
+read deviceIndex
+if [[ ! $deviceIndex =~ ^[0-9]+$ ]] ; then
+    exit
+fi
+
+if [ "$deviceIndex" -gt "$amountLine" ]; then
+   echo "No devices found at $deviceIndex";
+   exit;
+fi
+
+((deviceIndex = deviceIndex +1))
+devicesId="$(adb devices | awk NR==${deviceIndex} | awk '{print $1}')"
+
+deviceIp=$(adb -s $devicesId shell ip route | awk '{print $9}')
+echo "establish adb over wifi. please wait..."
+
+adb -s $devicesId tcpip 5555
+
+
+adb connect $deviceIp:5555
+
+
+echo "adb over wifi is ready -- You can unplug your device"
