@@ -1,5 +1,5 @@
 # ADB-Over-Wifi-Bash
-This is Bash Scripts that help you select and enable adb over wifi.
+This is Bash Scripts that help you select the devices and enable ADB over wifi to it.
 
 ## Setup
 
@@ -23,7 +23,9 @@ Now you are ready to use this Bash script
 ```
 - Terminal will show list of your devices
 ![alt text](https://raw.githubusercontent.com/ammarptn/ADB-Over-Wifi-Bash/master/src1.png)
-- Select devices that you wish to setup ADB over Wifi by Enter number (If you have only one devices connected, it will skip this step)
+- Select devices that you wish to setup ADB over Wifi by Enter number 
+ - If you have only one devices connected, it will skip this step
+
 ![alt text](https://raw.githubusercontent.com/ammarptn/ADB-Over-Wifi-Bash/master/src2_2.png)
 - Run it and Wait for a sec , unplug USB connection and your devices will ready to access over wifi.
 ![alt text](https://raw.githubusercontent.com/ammarptn/ADB-Over-Wifi-Bash/master/src3.png)
